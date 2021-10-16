@@ -1,0 +1,31 @@
+{
+  "name": "node-typescript",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-validator": "^6.10.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "typeorm": "^0.2.31"
+  },
+  "scripts": {
+    "start": "node build/src/server.js",
+    "dev": "nodemon src/server.ts",
+    "build": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/node": "^14.14.33",
+    "nodemon": "^2.0.7"
+  }
+}
